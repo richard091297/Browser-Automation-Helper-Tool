@@ -3,7 +3,7 @@ Leveraging Robocorp Code locator.
 
 Allow users to define web automation steps on the browser, then auto generates process script after run.
 # Features
-The tool supports the following features:
+This tool supports the following features:
 - Input text when element is visible:
   Add a step to the process to enter text in the element input field (using the current text in the input field)
 - Click element when visible:
