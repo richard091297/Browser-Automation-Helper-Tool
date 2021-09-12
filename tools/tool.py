@@ -13,9 +13,6 @@ from selenium.common.exceptions import (
     NoSuchWindowException,
     TimeoutException,
 )
-"""import logging
-logger = logging.getLogger('selenium.webdriver.remote.remote_connection')
-logger.setLevel(logging.CRITICAL)  # or any variant from ERROR, CRITICAL or NOTSET"""
 
 def load_resource(filename):
     with pkg_resources.resource_stream(__name__, filename) as fd:
@@ -27,14 +24,6 @@ class WebdriverError(Exception):
 class Webdriver:
 
     def __init__(self):
-        """
-        :param logger:
-            The logger to be used. If not specified the standard logging is used.
-            
-        :param headless:
-            If True the browser will start in headless mode (only supported
-            for Chrome right now).
-        """
 
         self._headless = True
         self._driver = None
