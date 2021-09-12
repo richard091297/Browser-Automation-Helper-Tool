@@ -51,6 +51,7 @@ class BaseElements:
                 actions = actions + f"self.data[self.arg{index}] = self.driver.{queue[0]}(self._get_selector(BaseElements.element{element_index}['strategy'], BaseElements.element{element_index}['value']))\n        "
             else:
                 actions = actions + f"self.driver.{queue[0]}(self._get_selector(BaseElements.element{element_index}['strategy'], BaseElements.element{element_index}['value']))\n        "
+                index+=1
             element_index+=1
         actions = actions + "self._store_data_to_file()\n        "
         objects_framework = f"""
@@ -131,10 +132,10 @@ if __name__ == "__main__":
         Press Control to start spying elements
         Right click element on screen to select options
         Press Alt to display current execution queue
-        Press Shift + 1 to select execution step to be dropped
-        Press Shift + 2 to drop latest execution step
-        Press Shift + 3 to close browser
-        Press Shift + 4 to generate process
+        Press Shift + F1 to select execution step to be dropped
+        Press Shift + F2 to drop latest execution step
+        Press Shift + F3 to close browser
+        Press Shift + F4 to generate process
         """)
         keyboard.add_hotkey("Control", lambda: self.w.display_selection())
         keyboard.add_hotkey("Alt", lambda: self.w.display_queue())
