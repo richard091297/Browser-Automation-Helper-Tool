@@ -1,7 +1,8 @@
 # Web-Automation-Helper-Tool
 Leveraging Robocorp Code locator. 
 
-Allow users to define web automation steps on the browser, then auto generates process script after run.
+This feature leverages Robocorp Code to enable efficient automation. The Robocorp Code locator allows users to define web automation steps on the browser, and then generates a process script automatically after the run. 
+
 # Features
 This tool supports the following features:
 - Input text when element is visible:
