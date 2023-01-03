@@ -1,5 +1,5 @@
 # Web-Automation-Helper-Tool
-This feature leverages Robocorp Code to enable efficient automation, allowing users to define web automation steps on the browser, and then generates a process script automatically after the run.
+This App leverages Robocorp Code to enable efficient automation, allowing users to define web automation steps on the browser, and then generates a process script automatically after the run.
 
 # Features
 This tool supports the following features:
